@@ -1,6 +1,5 @@
 import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
-//import './index.css';
 import App from './App';
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
@@ -12,13 +11,13 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 i18n
   .use(HttpApi)
-  .use(LanguageDetector)
+  .use(LanguageDetector) 
   .use(initReactI18next)
   .init({
     supportedLngs: ['en', 'es', 'ar', 'fr', ],
-    fallbackLng: 'en',
-    debug: false,
-    // Options for language detector
+    fallbackLng: 'en', // Language not supported
+    debug: false, 
+    // Options for language detector to prioritize languagedetector
     detection: {
       order: ['path', 'cookie', 'htmlTag', 'localStorage', 'subdomain'],
       caches: ['cookie'],
@@ -46,12 +45,3 @@ ReactDOM.render(
 );
 
 
-//import { createRoot } from 'react-dom/client';
-// const container = document.getElementById('root');
-// const root = createRoot(container);
-
-// root.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>,
-// )
