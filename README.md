@@ -19,10 +19,7 @@
 * Execute the following commands:
    - yarn install
    - yarn start
-
 ## App overview
 The application allows user to switch languages.
-
-
-## Future enhancements
+## Extra ideas
 - React Helmet: Manage changes to the document head.

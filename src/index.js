@@ -20,7 +20,7 @@ i18n
     debug: false, 
     // Options for language detector to prioritize languagedetector
     detection: {
-      order: ['path', 'cookie', 'htmlTag', 'localStorage', 'subdomain'],
+      order: ['path', 'cookie', 'htmlTag', 'localStorage', 'subdomain'], //Path is when the user write the language in the path 
       caches: ['cookie'],
     },
     //react: { useSuspense: false },
