@@ -97,7 +97,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="d-flex flex-column align-items-start">
+      <div className="d-flex flex-column align-items-center">
         <h1 className="font-weight-normal mb-3">{t("welcome_message")}</h1>
         <p>{t("days_since_release", { number_of_days })}</p>
       </div>
