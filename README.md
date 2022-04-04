@@ -1,4 +1,4 @@
-# ++++++++++ MULTI-LANGUAGES ++++++++++ #
+# ========== MULTI-LANGUAGES ========== #
 ## Technologies used
 * JavaScript (ES6)
 * HTML5
