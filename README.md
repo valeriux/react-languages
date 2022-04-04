@@ -12,3 +12,6 @@
 * Execute the following commands:
    - yarn install
    - yarn start
+
+## App overview
+The application allows user to switch languages.
