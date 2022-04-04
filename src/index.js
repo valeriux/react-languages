@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+//import './index.css';
 import App from './App';
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
@@ -15,7 +15,7 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    supportedLngs: ['en', 'ar', 'fr'],
+    supportedLngs: ['en', 'es', 'ar', 'fr', ],
     fallbackLng: 'en',
     debug: false,
     // Options for language detector

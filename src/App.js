@@ -12,6 +12,11 @@ const languages = [
     country_code: 'fr',
   },
   {
+    code: 'es',
+    name: 'Español',
+    country_code: 'es',
+  },
+  {
     code: 'en',
     name: 'English',
     country_code: 'gb',
@@ -35,7 +40,7 @@ function App() {
   const currentLanguage = languages.find((l) => l.code === currentLanguageCode)
   const { t } = useTranslation()
 
-  const releaseDate = new Date('2021-03-07')
+  const releaseDate = new Date('2022-04-01')
   const timeDifference = new Date() - releaseDate;
   const number_of_days = Math.floor(timeDifference / (1000 * 60 * 60 * 24))
 
@@ -59,9 +64,9 @@ function App() {
               <GlobeIcon />
             </button>
             <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li>
+              {/* <li>
                 <span className="dropdown-item-text">{t('language')}</span>
-              </li>
+              </li> */}
               {languages.map(({ code, name, country_code }) => (
                 <li key={country_code}>
                   <button
