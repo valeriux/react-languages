@@ -46,8 +46,8 @@ function App() {
   const currentLanguage = languages.find((l) => l.code === currentLanguageCode);
   const { t } = useTranslation(); //Hook obtained from our react-i18next library. Give us the t utility which is the function we use and we pass the key from translation.json file: welcome_message
 
-  const releaseDate = new Date("2022-04-01");
-  const timeDifference = new Date() - releaseDate;
+  const meetingDate = new Date("2022-04-01");
+  const timeDifference = new Date() - meetingDate;
   const number_of_days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
 
   useEffect(() => {
@@ -99,7 +99,7 @@ function App() {
       </div>
       <div className="d-flex flex-column align-items-center">
         <h1 className="font-weight-normal mb-3">{t("welcome_message")}</h1>
-        <p>{t("days_since_release", { number_of_days })}</p>
+        <p>{t("days_since_last_meeting", { number_of_days })}</p>
       </div>
     </div>
   );

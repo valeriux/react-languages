@@ -2,5 +2,5 @@
     "app_title": "Titre",
     "language": "Langue",
     "welcome_message": "Bienvenue",
-    "days_since_release": "ça fait {{number_of_days}} jours depuis notre dernière rencontre"
+    "days_since_last_meeting": "ça fait {{number_of_days}} jours depuis notre dernière rencontre"
   }

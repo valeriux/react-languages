@@ -2,5 +2,5 @@
     "app_title": "عنوان",
     "language": "اللغة",
     "welcome_message": "اهلا بكم",
-    "days_since_release": "لقد كان{{number_of_days}} أيام منذ اجتماعنا الأخير"
+    "days_since_last_meeting": "لقد كان{{number_of_days}} أيام منذ اجتماعنا الأخير"
   }
