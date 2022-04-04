@@ -1,0 +1,29 @@
+[
+    {
+      "code": "fr",
+      "name": "Français",
+      "country_code": "fr"
+    },
+    {
+        "code": "es",
+        "name": "Español",
+        "country_code": "es"
+      },
+      {
+        "code": "en",
+        "name": "English",
+        "country_code": "gb"
+      },
+      {
+        "code": "cn",
+        "name": "Chinese",
+        "country_code": "cn"
+      },
+      {
+        "code": "ar",
+        "name": "العربية",
+        "dir": "rtl",
+        "country_code": "sa"
+      }
+  ]
+  

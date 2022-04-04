@@ -1,0 +1,6 @@
+{
+  "app_title": "資質",
+  "language": "語言",
+  "welcome_message": "歡迎",
+  "days_since_last_meeting": "已經通過 {{number_of_days}} 距離我們上次見面的天數"
+}

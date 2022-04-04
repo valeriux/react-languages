@@ -3,32 +3,11 @@ import { useTranslation } from "react-i18next";
 import i18n from "i18next";
 import cookies from "js-cookie";
 import classNames from "classnames";
+import languagesKeys from "../src/languages_keys/languages.json";
 
-const languages = [
-  {
-    code: "fr",
-    name: "Français",
-    country_code: "fr",
-  },
-  {
-    code: "es",
-    name: "Español",
-    country_code: "es",
-  },
-  {
-    code: "en",
-    name: "English",
-    country_code: "gb",
-  },
-  {
-    code: "ar",
-    name: "العربية",
-    dir: "rtl", //Language right to left
-    country_code: "sa",
-  },
-];
+const languages = languagesKeys;
 
-const GlobeIcon = ({width = 30, height = 30}) => (
+const GlobeIcon = ({ width = 30, height = 30 }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={width}
@@ -77,7 +56,7 @@ function App() {
                 <li key={country_code}>
                   <button
                     className={classNames("dropdown-item", {
-                      disabled: code === currentLanguageCode ,
+                      disabled: code === currentLanguageCode,
                     })}
                     onClick={() => {
                       i18n.changeLanguage(code);
@@ -86,7 +65,7 @@ function App() {
                     <span
                       className={`flag-icon flag-icon-${country_code} mx-2`}
                       style={{
-                        opacity:  code === currentLanguageCode ? 0.5 : 1,
+                        opacity: code === currentLanguageCode ? 0.5 : 1,
                       }}
                     ></span>
                     {name}
@@ -97,7 +76,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="d-flex flex-column align-items-center">
+      <div className="d-flex flex-column align-items-center p-4 shadow-lg ">
         <h1 className="font-weight-normal mb-3">{t("welcome_message")}</h1>
         <p>{t("days_since_last_meeting", { number_of_days })}</p>
       </div>
