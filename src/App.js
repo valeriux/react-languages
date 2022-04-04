@@ -23,7 +23,7 @@ const languages = [
   {
     code: "ar",
     name: "العربية",
-    dir: "rtl",
+    dir: "rtl", //Language right to left
     country_code: "sa",
   },
 ];
@@ -42,8 +42,8 @@ const GlobeIcon = ({width = 30, height = 30}) => (
 );
 
 function App() {
-  const currentLanguageCode = cookies.get("i18next") || "en";
-  const currentLanguage = languages.find((l) => l.code === currentLanguageCode);
+  const currentLanguageCode = cookies.get("i18next") || "en"; //To obtain the currentLanguage from the cookie. If i18next doesn't exist take en
+  const currentLanguage = languages.find((l) => l.code === currentLanguageCode); //Find currentLanguage
   const { t } = useTranslation(); //Hook obtained from our react-i18next library. Give us the t utility which is the function we use and we pass the key from translation.json file: welcome_message
 
   const meetingDate = new Date("2022-04-01");
@@ -51,9 +51,9 @@ function App() {
   const number_of_days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
 
   useEffect(() => {
-    document.body.dir = currentLanguage.dir || "ltr";
+    document.body.dir = currentLanguage.dir || "ltr"; // Direction: We only get it if is right to left otherwise we reverse.
     document.title = t("app_title");
-  }, [currentLanguage, t]);
+  }, [currentLanguage, t]); //We pass our dependency for our useEffect so everytime the language change the direction change as well
 
   return (
     <div className="container">
@@ -77,7 +77,7 @@ function App() {
                 <li key={country_code}>
                   <button
                     className={classNames("dropdown-item", {
-                      disabled: currentLanguageCode === code,
+                      disabled: code === currentLanguageCode ,
                     })}
                     onClick={() => {
                       i18n.changeLanguage(code);
@@ -86,7 +86,7 @@ function App() {
                     <span
                       className={`flag-icon flag-icon-${country_code} mx-2`}
                       style={{
-                        opacity: currentLanguageCode === code ? 0.5 : 1,
+                        opacity:  code === currentLanguageCode ? 0.5 : 1,
                       }}
                     ></span>
                     {name}
