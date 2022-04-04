@@ -1,11 +1,11 @@
 # MULTI-LANGUAGES #
 ## Technologies used
 
-* JavaScript (ES6).
-* HTML5.
-* Bootstrap (CSS framework).
-* React Hooks.
-* GitHub.
+* JavaScript (ES6)
+* HTML5
+* Bootstrap (CSS framework)
+* React Hooks
+* GitHub
 
 ### More details
 * react-i18next: https://react.i18next.com/ I used i18next with react implementation. It is the framework that allow me to initialize my configuration and setup the different languages text allowing to change between them if user change the language. (yarn add react-i18next i18next)
