@@ -10,9 +10,9 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 //import 'flag-icon-css/css/flag-icon.min.css'
 
 i18n
-  .use(HttpApi)
-  .use(LanguageDetector) 
   .use(initReactI18next)
+  .use(LanguageDetector) 
+  .use(HttpApi)
   .init({
     supportedLngs: ['en', 'es', 'ar', 'fr', ],
     fallbackLng: 'en', // Language not supported
@@ -24,7 +24,7 @@ i18n
     },
     //react: { useSuspense: false },
     backend: {
-      loadPath: '/assets/translations/{{lng}}/translation.json',
+      loadPath: '/assets/translations/{{lng}}/translation.json', //Path of all my translations {{lng is depending of the language: ar, en, es and fr}}
     },
   })
 
