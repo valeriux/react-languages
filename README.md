@@ -9,6 +9,6 @@
 ## Installation
 
 * Clone or download the repo.
-* Execute this following commands:
+* Execute the following commands:
    - yarn install
    - yarn start
